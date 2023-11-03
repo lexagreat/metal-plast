@@ -3458,7 +3458,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    color: #18214D;
    font-size: 18px;
    font-weight: 600;
-   line-height: 1.6666666667;
+   line-height: 1.16;
    /* 166.667% */
    letter-spacing: -0.55px;
 }
@@ -3468,6 +3468,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    line-height: 1.4285714286;
    /* 142.857% */
    letter-spacing: -0.3px;
+   max-width: 250px;
 }
 
 .request {
@@ -4072,6 +4073,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    /* 162.5% */
    letter-spacing: -0.2px;
    padding-bottom: 36px;
+   max-width: 881px;
+}
+
+@media(max-width: 992px) {
+   .faq-item__text {
+      max-width: calc(100% - 24px);
+   }
 }
 
 .consult {
@@ -5102,6 +5110,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
    .how__text {
       font-size: 18px;
+      max-width: unset;
    }
 
    .projects {
