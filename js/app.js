@@ -144,9 +144,10 @@ const productionSwiper = new Swiper('.production__slider', {
    navigation: {
       prevEl: ".production__btn_prev",
       nextEl: ".production__btn_next",
-   }, breakpoints: {
+   },
+   breakpoints: {
       992: {
-         freeMode: false,
+         // freeMode: false,
          spaceBetween: 30,
          slidesPerView: "auto",
       },
