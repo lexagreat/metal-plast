@@ -1,9 +1,9 @@
 <?php
 error_reporting(E_ALL);
-$name = $_POST['name'];
-$email = $_POST['email'];
+$name = $_POST['name1'];
+$email = $_POST['email1'];
 
-$to = ''; //твой имэйл
+$to = '9608798010@mail.ru'; //твой имэйл
 $subject = 'Тема письма';
 $message = 'Текст письма';
 $headers = 'From: '. $email . "\r\n" .

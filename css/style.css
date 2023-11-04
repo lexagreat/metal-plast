@@ -5391,3 +5391,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       font-size: 30px;
    }
 }
+
+
+body::-webkit-scrollbar {
+   display: none;
+}
+
+body {
+   -ms-overflow-style: none;
+   /* IE и Edge */
+   scrollbar-width: none;
+   /* Firefox */
+}

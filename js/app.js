@@ -32,7 +32,7 @@ const mask = IMask(document.getElementById('phone'), maskOptions);
 function headerMenu() {
    const btn = document.querySelector('.header__burger')
    const menu = document.querySelector('.header__menu')
-   const links = document.querySelectorAll('.header__link')
+   const links = document.querySelectorAll('.scroll-link')
    btn.addEventListener("click", () => {
       if (btn.classList.contains("active")) {
          closeBurger()

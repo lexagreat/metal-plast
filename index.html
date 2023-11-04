@@ -72,25 +72,25 @@
                <div class="header__menu">
                   <ul class="header__list">
                      <li>
-                        <a href="#preferences" class="header__link">Преимущества</a>
+                        <a href="#preferences" class="header__link scroll-link">Преимущества</a>
                      </li>
                      <li>
-                        <a href="#services" class="header__link">Услуги</a>
+                        <a href="#services" class="header__link scroll-link">Услуги</a>
                      </li>
                      <li>
-                        <a href="#production" class="header__link">Производство</a>
+                        <a href="#production" class="header__link scroll-link">Производство</a>
                      </li>
                      <li>
-                        <a href="#cases" class="header__link">Кейсы</a>
+                        <a href="#cases" class="header__link scroll-link">Кейсы</a>
                      </li>
                      <li>
-                        <a href="#faq" class="header__link">FAQ</a>
+                        <a href="#faq" class="header__link scroll-link">FAQ</a>
                      </li>
                      <li>
-                        <a href="#contacts" class="header__link">Контакты</a>
+                        <a href="#contacts" class="header__link scroll-link">Контакты</a>
                      </li>
                      <li>
-                        <a href="#mail" class="header__link">hello@metalplastchina.ru</a>
+                        <a href="mailto:hello@metalplastchina.ru" class="header__link">hello@metalplastchina.ru</a>
                      </li>
                   </ul>
                </div>
@@ -124,7 +124,7 @@
                      <h1 class="hero__title">Изготовление деталей по вашим чертежам</h1>
                      <p class="hero__subtitle">Из металла, титана, алюминия и пластика <br>
                         под заказ из Китая</p>
-                     <a href="#consult" class="hero__btn">
+                     <a href="#mail" class="hero__btn scroll-link">
                         Оставить заявку
                      </a>
                   </div>
@@ -353,8 +353,8 @@
                      </p>
                   </div>
                   <form class="request__form" method="post" action="php/sendmail.php">
-                     <input type="text" name="name" id="name" class="request__input" placeholder="Имя">
-                     <input type="text" name="email" id="email" class="request__input" placeholder="Email">
+                     <input type="text" name="name1" id="name" class="request__input" placeholder="Имя">
+                     <input type="text" name="email1" id="email" class="request__input" placeholder="Email">
                      <button type="submit" class="request__btn">Отправить</button>
                   </form>
                </div>
@@ -906,23 +906,25 @@
                            Оставьте заявку и мы свяжемся с вами в течении часа для обсуждения вашего вопроса
                         </p>
                      </div>
-                     <form class="consult__form consult-form wow slideInRight" method="get">
+                     <form class="consult__form consult-form wow slideInRight" method="post" action="php/consult.php">
                         <div class="consult-form__wrapper">
                            <ul class="consult-form__main">
                               <li class="consult-form__item">
-                                 <input type="text" class="consult-form__input" placeholder="Имя">
+                                 <input type="text" class="consult-form__input" placeholder="Имя" name="mail2">
                               </li>
                               <li class="consult-form__item">
-                                 <input type="text" class="consult-form__input" placeholder="Email">
+                                 <input type="text" class="consult-form__input" placeholder="Email" name="email2">
                               </li>
                               <li class="consult-form__item">
-                                 <input type="text" class="consult-form__input" placeholder="Телефон" id="phone">
+                                 <input type="text" class="consult-form__input" placeholder="Телефон" id="phone"
+                                    name="phone2">
                               </li>
                               <li class="consult-form__item">
-                                 <input type="text" class="consult-form__input" placeholder="Комментарий">
+                                 <input type="text" class="consult-form__input" placeholder="Комментарий"
+                                    name="comment2">
                               </li>
                               <li class="consult-form__item file">
-                                 <input type="file" class="consult-form__file" id="file">
+                                 <input type="file" class="consult-form__file" id="file" name="file2">
                                  <label for="file">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                        fill="none">
@@ -936,7 +938,7 @@
                               </li>
                            </ul>
                            <div class="consult-form__footer">
-                              <button type="button" class="consult-form__btn">Отправить</button>
+                              <button type="submit" class="consult-form__btn">Отправить</button>
                               <div class="consult-form__agree">
                                  <input type="checkbox" name="agree" id="agree">
                                  <label for="agree">
@@ -1257,9 +1259,9 @@
                </div>
                <div class="footer__down">
                   <span class="footer__copy">Copyright © 2023 metalplastchina.ru</span>
-                  <a href="#" class="footer__copy">Политика конфиденциальности</a>
-                  <a href="#" class="footer__copy">Презентация завода</a>
-                  <a href="#" class="footer__copy">Сертификат</a>
+                  <a target="_blank" href="#" class="footer__copy">Политика конфиденциальности</a>
+                  <a target="_blank" href="presentation.pdf" class="footer__copy">Презентация завода</a>
+                  <a target="_blank" href="sert.jpeg" class="footer__copy">Сертификат</a>
                </div>
             </div>
          </div>
