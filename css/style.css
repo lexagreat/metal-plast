@@ -3449,6 +3449,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    gap: 32px;
 }
 
+.how__list.how__list_mobile {
+   display: none;
+}
+
+@media(max-width: 768px) {
+   .how__list.how__list_mobile {
+      display: flex;
+   }
+
+   .how__list.how__list_desktop {
+      display: none;
+   }
+}
+
 .how__item {
    display: -webkit-box;
    display: -ms-flexbox;
@@ -5069,6 +5083,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       grid-template-columns: repeat(3, 280px);
       row-gap: 30px;
       overflow-x: auto;
+      overflow-y: hidden;
       ms-overflow-style: none;
       overflow: -moz-scrollbars-none;
    }
@@ -5201,6 +5216,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       grid-template-columns: repeat(2, 1fr);
       -ms-grid-rows: (169px)[3];
       grid-template-rows: repeat(3, 169px);
+      gap: 5px;
    }
 
    .projects__item:nth-child(1) {

@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
    tabs("input[name='projectsTabs']", ".projects__result")
    accordion(".faq-item__header", ".faq-item__content")
    videoWork()
+   // howAnim()
 })
 const body = document.querySelector('body')
 // new WOW().init();
@@ -78,6 +79,17 @@ function videoWork() {
       }
    })
 }
+// function howAnim() {
+//    const items = document.querySelectorAll('.how__item')
+//    let n = 0.5;
+//    items.forEach((item, index) => {
+//       console.log(index * n);
+//       // item.getAttribute("data-wow-delay") = index * n;
+//       item.removeAttribute("data-wow-delay")
+//       item.setAttribute("data-wow-delay", index * n)
+//       item.style.animationDelay = `${index * n}s`
+//    })
+// }
 // shared
 function accordion(linkSelector, contentSelector) {
    // получаем линки
@@ -122,7 +134,6 @@ function tabs(linkSelector, contentSelector) {
    const contents = document.querySelectorAll(contentSelector)
    let value
    if (inputs.length) {
-      console.log(inputs);
       inputs.forEach(item => {
          item.addEventListener("change", () => {
             if (item.checked) {
