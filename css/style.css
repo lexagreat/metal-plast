@@ -3304,6 +3304,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    -webkit-box-flex: 0;
    -ms-flex: 0 0 570px;
    flex: 0 0 570px;
+   height: 650px;
    border-radius: 8px;
    overflow: hidden;
    position: relative;
@@ -4348,6 +4349,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    user-select: none;
 }
 
+.consult-form__agree label a {
+   color: #3E4462;
+   text-decoration: underline;
+}
+
 .consult-form__agree input {
    display: none;
 }
@@ -4472,6 +4478,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    line-height: 1.625;
    /* 162.5% */
    letter-spacing: -0.2px;
+   position: relative;
+}
+
+.footer__link::after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 1px;
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   background-color: #3E4462;
+   transform: scale(0);
+   transition: 0.3s;
+}
+
+.footer__link:hover::after {
+   transform: scale(1);
 }
 
 .footer__down {
